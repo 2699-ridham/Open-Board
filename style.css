@@ -1,0 +1,162 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.option-cont{
+    height: 3rem;
+    width: 2.5rem;
+    background-color:#f1f2f6;
+    position: absolute;
+    top: 1rem;
+    left: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.tools-cont{
+    height: 4rem;
+    width: 50vw;
+    background-color: #f1f2f6;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 2rem;
+    position: absolute;
+    top: 1rem;
+    left: 25vw;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.tools-cont > *{
+    display: block;
+} 
+.scale-tool{
+    animation-name: scale-tool; /* name of the animation*/
+    animation-duration: 1s; /* time of the animation */
+}
+@keyframes scale-tool {
+    0%{
+        transform: scale(0.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.pencil-tool-cont{
+    height: 3rem;
+    width: 5.8rem;
+    position: absolute;
+    top: 5rem;
+    left: 25vw;
+    background-color: #f1f2f6;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 8px;
+    display: none;
+}
+.pencil-width-cont{
+    /* width: 6.5rem; */
+    height: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pencil-width-cont input{
+    width: 80%;
+}
+.pencil-color-cont{
+    height: calc(100% - 1rem);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.pencil-color{
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+}
+.black{
+    background-color: black;
+}
+.red{
+    background-color: red;
+}
+.blue{
+    background-color: blue;
+}
+.eraser-tool-cont{
+    height: 1rem;
+    width: 5rem;
+    background-color: #f1f2f6;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 5rem;
+    left: 33vw;
+    border-radius: 5px;
+}
+.eraser-tool-cont input{
+    width: 80%;
+}
+.sticky-cont{
+    height: 12rem;
+    width: 13rem;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+    position: absolute;
+    top: 15rem;
+    left: 10rem;
+}
+.header-cont{
+    height: 2rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color:#a4b0be
+}
+.header-cont >*{
+    height: 1.3rem;
+    width: 1.3rem;
+    margin-right: 0.3rem;
+    border-radius: 50%;
+}
+.note-cont{
+    height: calc(100% - 1.8rem);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+textarea{
+    height: 100%;
+    width: 100%;
+    border: none;
+    resize: none /* for removing the extra line from the bottom of the textarea*/
+}
+img{
+    height: 100%;
+    width: 100%;
+}
+.shape-cont{
+    height: 2.8rem;
+    width: 5rem;
+    background-color: #f1f2f6;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 5.1rem;
+    left: 40vw;
+    font-size: 1.2rem;
+    border-radius: 10%;
+}
+
+
+
+
+
+
+
